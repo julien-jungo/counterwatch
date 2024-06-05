@@ -37,7 +37,7 @@ const router = createBrowserRouter([
     },
   ],
   {
-    basename: '/counterwatch'
+    basename: `${process.env.PUBLIC_URL}`
   }
 );
 
