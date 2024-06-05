@@ -12,30 +12,34 @@ import Root from './components/routes/Root';
 import NotFound from './components/routes/NotFound';
 
 const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Root />,
+      children: [
+        {
+          path: '',
+          element: <Navigate to='heroes' />
+        },
+        {
+          path: 'heroes',
+          element: <Heroes />,
+        },
+        {
+          path: 'heroes/:id',
+          element: <Hero />,
+          errorElement: <NotFound />
+        },
+        {
+          path: '*',
+          element: <NotFound />
+        }
+      ]
+    },
+  ],
   {
-    path: '/',
-    element: <Root />,
-    children: [
-      {
-        path: '',
-        element: <Navigate to='heroes' />
-      },
-      {
-        path: 'heroes',
-        element: <Heroes />,
-      },
-      {
-        path: 'heroes/:id',
-        element: <Hero />,
-        errorElement: <NotFound />
-      },
-      {
-        path: '*',
-        element: <NotFound />
-      }
-    ]
-  },
-]);
+    basename: '/counterwatch'
+  }
+);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
