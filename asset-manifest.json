@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/counterwatch/static/css/main.74c6413c.css",
-    "main.js": "/counterwatch/static/js/main.9d0a40d7.js",
+    "main.js": "/counterwatch/static/js/main.9f520d8f.js",
     "index.html": "/counterwatch/index.html",
     "main.74c6413c.css.map": "/counterwatch/static/css/main.74c6413c.css.map",
-    "main.9d0a40d7.js.map": "/counterwatch/static/js/main.9d0a40d7.js.map"
+    "main.9f520d8f.js.map": "/counterwatch/static/js/main.9f520d8f.js.map"
   },
   "entrypoints": [
     "static/css/main.74c6413c.css",
-    "static/js/main.9d0a40d7.js"
+    "static/js/main.9f520d8f.js"
   ]
 }
