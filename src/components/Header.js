@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <header className='py-4'>
             <button onClick={onClick}>
-                <h1 className='text-3xl font-bold'>
+                <h1 className='text-2xl font-bold'>
                     Overwatch Counter Picker
                 </h1>
             </button>

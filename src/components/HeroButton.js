@@ -15,7 +15,7 @@ const HeroButton = ({ hero }) => {
                 src={require(`../icons/${hero.id}.webp`)}
                 alt={hero.name}
             />
-            <p className='truncate'>
+            <p className='max-w-full truncate'>
                 {hero.name}
             </p>
         </button>
