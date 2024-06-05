@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            var query = window.location.search || '?';
+            var hash = window.location.hash || '';
+
+            query = query.substr(1);
+
+            var newURL = window.location.origin + window.location.pathname + '#' + query;
+
+            window.location.replace(newURL);
+        </script>
+    </head>
+</html>
