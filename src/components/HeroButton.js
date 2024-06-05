@@ -12,7 +12,7 @@ const HeroButton = ({ hero }) => {
         >
             <img
                 className='rounded'
-                src={`/icons/${hero.id}.webp`}
+                src={require(`../icons/${hero.id}.webp`)}
                 alt={hero.name}
             />
             <p className='truncate'>
