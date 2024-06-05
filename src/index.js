@@ -4,42 +4,38 @@ import './index.css';
 import {
   Navigate,
   RouterProvider,
-  createBrowserRouter
+  createHashRouter
 } from 'react-router-dom';
 import Heroes from './components/routes/Heroes';
 import Hero from './components/routes/Hero';
 import Root from './components/routes/Root';
 import NotFound from './components/routes/NotFound';
 
-const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <Root />,
-      children: [
-        {
-          path: '',
-          element: <Navigate to='heroes' />
-        },
-        {
-          path: 'heroes',
-          element: <Heroes />,
-        },
-        {
-          path: 'heroes/:id',
-          element: <Hero />,
-          errorElement: <NotFound />
-        },
-        {
-          path: '*',
-          element: <NotFound />
-        }
-      ]
-    },
-  ],
+const router = createHashRouter([
   {
-    basename: `${process.env.PUBLIC_URL}`
-  }
-);
+    path: '/',
+    element: <Root />,
+    children: [
+      {
+        path: '',
+        element: <Navigate to='heroes' />
+      },
+      {
+        path: 'heroes',
+        element: <Heroes />,
+      },
+      {
+        path: 'heroes/:id',
+        element: <Hero />,
+        errorElement: <NotFound />
+      },
+      {
+        path: '*',
+        element: <NotFound />
+      }
+    ]
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
