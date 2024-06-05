@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/counterwatch/static/css/main.74c6413c.css",
-    "main.js": "/counterwatch/static/js/main.a7885e24.js",
+    "main.css": "/counterwatch/static/css/main.e76284f2.css",
+    "main.js": "/counterwatch/static/js/main.5acbc2c4.js",
     "static/media/baptiste.webp": "/counterwatch/static/media/baptiste.74363e3b7eebad0d605b.webp",
     "static/media/bastion.webp": "/counterwatch/static/media/bastion.105267105f54e2145eab.webp",
     "static/media/wrecking_ball.webp": "/counterwatch/static/media/wrecking_ball.2c8ef49c234e0992ff65.webp",
@@ -42,11 +42,11 @@
     "static/media/winston.webp": "/counterwatch/static/media/winston.72a24d7688cea61f006d.webp",
     "static/media/mauga.webp": "/counterwatch/static/media/mauga.da77569e1132ccee3b50.webp",
     "index.html": "/counterwatch/index.html",
-    "main.74c6413c.css.map": "/counterwatch/static/css/main.74c6413c.css.map",
-    "main.a7885e24.js.map": "/counterwatch/static/js/main.a7885e24.js.map"
+    "main.e76284f2.css.map": "/counterwatch/static/css/main.e76284f2.css.map",
+    "main.5acbc2c4.js.map": "/counterwatch/static/js/main.5acbc2c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.74c6413c.css",
-    "static/js/main.a7885e24.js"
+    "static/css/main.e76284f2.css",
+    "static/js/main.5acbc2c4.js"
   ]
 }
