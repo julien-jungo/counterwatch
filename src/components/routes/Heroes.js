@@ -7,7 +7,6 @@ const Heroes = () => {
     const [heroes, setHeroes] = useState(HEROES);
 
     const filterHeroes = (filterTerm) => {
-        console.log(heroes)
         const filteredHeroes = HEROES.filter((hero) => (
             hero.name.toLowerCase().startsWith(filterTerm.toLowerCase())
         ));
